@@ -1,3 +1,13 @@
+# Web3 Python Starter
+
+![Python](https://img.shields.io/badge/Python-3.11+-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Web3](https://img.shields.io/badge/Web3.py-Latest-orange)
+
+A production-ready Python Web3 starter template.
+
+
+
 # Wallet Tutorial
 
 使用 Python 创建第一个链上钱包，并学习如何安全管理私钥。

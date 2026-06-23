@@ -1,20 +1,20 @@
 # Web3 Python Starter
 
+[简体中文](README.zh-CN.md)
+
 ![Python](https://img.shields.io/badge/Python-3.11+-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Web3](https://img.shields.io/badge/Web3.py-Latest-orange)
 
 A production-ready Python Web3 starter template.
 
+## Wallet Tutorial
 
-
-# Wallet Tutorial
-
-使用 Python 创建第一个链上钱包，并学习如何安全管理私钥。
+Create your first blockchain wallet using Python and learn how to manage private keys securely.
 
 ---
 
-## 项目结构
+## Project Structure
 
 ```text
 wallet_tutorial/
@@ -35,23 +35,23 @@ wallet_tutorial/
 
 ---
 
-## 功能
+## Features
 
-- 创建钱包
-- 生成地址
-- 保存私钥到 `.env`
-- 从私钥恢复钱包
-- 验证钱包地址
-- 自动管理虚拟环境
+- Generate a wallet
+- Create a wallet address
+- Store private keys in `.env`
+- Recover wallet from private key
+- Verify wallet address
+- Automatic virtual environment management
 
 ---
 
-## 环境要求
+## Requirements
 
 - Python 3.11+
 - Windows PowerShell
 
-检查版本：
+Check your Python version:
 
 ```powershell
 python --version
@@ -59,25 +59,25 @@ python --version
 
 ---
 
-## 初始化项目
+## Project Initialization
 
-创建虚拟环境：
+Create a virtual environment:
 
 ```powershell
 python -m venv .venv
 ```
 
-激活环境：
+Activate the environment:
 
 ```powershell
 .\scripts\activate.ps1
 ```
 
-如果 `.venv` 不存在，脚本会自动创建。
+If `.venv` does not exist, the script will create it automatically.
 
 ---
 
-## 安装依赖
+## Install Dependencies
 
 ```powershell
 pip install web3
@@ -85,7 +85,7 @@ pip install eth-account
 pip install python-dotenv
 ```
 
-或者：
+Or install all dependencies:
 
 ```powershell
 pip install -r requirements.txt
@@ -93,13 +93,13 @@ pip install -r requirements.txt
 
 ---
 
-## 运行项目
+## Run the Project
 
 ```powershell
 python src/main.py
 ```
 
-示例输出：
+Example output:
 
 ```text
 Wallet Address: 0x1234...
@@ -109,9 +109,9 @@ Wallet verification success
 
 ---
 
-## 生成的 .env
+## Generated .env File
 
-程序首次运行后会自动生成：
+The application automatically creates:
 
 ```env
 PRIVATE_KEY=xxxxxxxxxxxxxxxx
@@ -120,15 +120,15 @@ WALLET_ADDRESS=0x1234567890
 
 ---
 
-## 安全提示
+## Security Notes
 
-请勿：
+Never:
 
-- 上传 `.env`
-- 提交 `.env` 到 GitHub
-- 分享私钥给任何人
+- Upload your `.env`
+- Commit `.env` to GitHub
+- Share your private key with anyone
 
-`.gitignore`
+Recommended `.gitignore`:
 
 ```text
 .env
@@ -139,47 +139,49 @@ logs/
 
 ---
 
-## 模块说明
+## Modules
 
 ### wallet.py
 
-负责：
+Responsible for:
 
-- 创建钱包
-- 保存钱包
+- Wallet generation
+- Wallet persistence
 
 ### check_key.py
 
-负责：
+Responsible for:
 
-- 读取私钥
-- 恢复钱包
-- 验证地址
+- Loading private keys
+- Recovering wallets
+- Verifying addresses
 
 ### main.py
 
-程序入口：
+Application entry point:
 
 ```text
-创建钱包
+Create Wallet
     ↓
-保存私钥
+Save Private Key
     ↓
-恢复钱包
+Recover Wallet
     ↓
-验证钱包
+Verify Wallet
 ```
 
 ---
 
-## 下一课
+## Roadmap
 
-连接 RPC 节点并查询钱包余额。
+### Next Lesson
 
-内容包括：
+Connect to an RPC node and query wallet balances.
 
-- Web3 初始化
-- RPC 配置
-- 查询 ETH 余额
-- 查询区块高度
-- 验证链连接状态
+Topics include:
+
+- Web3 initialization
+- RPC configuration
+- Query ETH balance
+- Query latest block number
+- Verify blockchain connectivity
